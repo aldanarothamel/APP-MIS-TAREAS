@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+   --white: #f3e9d2;
+   --green-blue:#114b5f;
+   --green-light:#88d498;
+   --green-dark:#1a936f;
+
+}
+
+body {
+    background: linear-gradient(to bottom,var(--green-blue),var(--green-light));
+    height: 100vh;   
+    font-family: 'Prompt', sans-serif;
+}
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*PERFIL*/
+
+.perfil h1 {
+    color: var(--white);
+}
+
+.perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#fecha {
+    color: var(--white);
+    padding: 50px 0 5px 0px;
+
+}
+
+
+/*AGREGAR TAREA*/
+
+.agregar-tarea {
+    background-color: var(--white) ;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--white);
+    padding-left: 10px;
+    outline: none;
+
+}
+.agregar-tarea input::placeholder {
+   font-size: 1.1rem;
+   color: var(--green-blue);
+}
+
+.agregar-tarea i{
+    font-size: 50px;
+    color: var(--green-blue);
+
+}
+.agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*SECCION DE TAREA */
+
+.seccion-tarea h3 {
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom,var(--green-dark),var(--green-blue));
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--white);
+    margin: 5px 0;
+
+}
+.seccion-tarea i {
+    font-size: 25px;
+}
+
+.seccion-tarea > ul p {
+    font-size: 1.2rem;
+
+}
+
+
+.seccion-tarea i:hover {
+    color: var(--green-light);
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color : var(--green-light);
+} 
